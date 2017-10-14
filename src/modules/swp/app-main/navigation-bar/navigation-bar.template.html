@@ -1,0 +1,7 @@
+<md-tabs md-selected="$ctrl.categoriesService.selected_category_index" md-center-tabs="true">
+    <md-tab ng-repeat="category in $ctrl.categoriesService.categories_keys" md-on-select="$ctrl.linkClick(category)">
+        <md-tab-label>
+            {{category}}
+        </md-tab-label>
+    </md-tab>
+</md-tabs>

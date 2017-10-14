@@ -1,0 +1,28 @@
+<div class="selected-item-container md-whiteframe-3dp" layout="column" layout-align="space-between center" layout-fill ng-if="!$ctrl.categoriesService.selected_category_is_loading">
+    <div class="item-title md-display-1" layout="row" layout-align="center start">{{$ctrl.selectedItem.name || $ctrl.selectedItem.title}}</div>
+
+    <div class="item-details" flex>
+        <div class="item-details-scroll" layout="column">
+            <div class="item-detail" ng-repeat="(key, value) in $ctrl.selectedItem" layout="row" ng-if="$ctrl.filterArrayValues(value)" layout-align="space-between none">
+                <span class="item-detail-key" layout-align="none start" flex="50">{{key}}</span><span class="item-detail-value" layout-align="none end" flex="50">{{value}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider">
+    </div>
+
+    <div class="item-actions" layout="row" layout-align="space-between center">
+        <div hide show-gt-xs>
+        </div>
+        <md-button class="" aria-label="back" ng-click="$ctrl.categoriesService.deselect_category_item()" hide show-xs>
+            <md-icon>arrow_back</md-icon>
+        </md-button>
+
+        <md-button class="" aria-label="Favorite" ng-click="$ctrl.categoriesService.toggle_category_item_bookmark($ctrl.selectedItem)">
+            <md-icon>{{$ctrl.selectedItem.bookmarked ? 'favorite' : 'favorite_outline'}}</md-icon>
+        </md-button>
+
+    </div>
+</div>
+<loading-animation ng-if="$ctrl.categoriesService.selected_category_is_loading" layout="column" layout-align="center center" layout-fill></loading-animation>

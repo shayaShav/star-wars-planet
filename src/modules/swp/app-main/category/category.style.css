@@ -1,0 +1,12 @@
+#category-view { width: 70vw; }
+
+#category-view category { overflow-y: hidden; height: 100%; width: 100%; }
+
+#category-view category .category-content { height: 100%; }
+
+@media screen and (max-width: 600px) { #category-view { width: 75vw; }
+  #category-view .category-content { height: 100%; overflow: hidden; }
+  #category-view .category-content category-selected-item { display: none; }
+  #category-view .category-content category-items-list { max-width: 100%; width: 100%; }
+  #category-view .category-content.selected-item category-selected-item { display: flex; width: 100%; }
+  #category-view .category-content.selected-item category-items-list { display: none; } }

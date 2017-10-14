@@ -1,0 +1,44 @@
+#category-view {
+    width: 70vw;
+
+    category {
+        overflow-y: hidden;
+        height: 100%;
+        width: 100%;
+
+        .category-content {
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    #category-view {
+        width: 75vw;
+
+        .category-content {
+            height: 100%;
+            overflow: hidden;
+
+            category-selected-item {
+                display: none;
+            }
+
+            category-items-list {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &.selected-item {
+                category-selected-item {
+                    display: flex;
+                    width: 100%;
+                }
+
+                category-items-list {
+                    display: none;
+                }
+            }
+        }
+    }
+}

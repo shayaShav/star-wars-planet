@@ -1,0 +1,25 @@
+navigation-bar {
+    width: 70vw;
+    text-transform: capitalize;
+
+    md-tabs {
+        width: 100%;
+
+        .md-tab,
+        .md-tab.md-active {
+            background: #2c2c2c;
+            opacity: 0.7;
+            color: #FFF;
+        }
+
+        md-icon {
+            color: #FFF;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    navigation-bar {
+        width: 75vw;
+    }
+}

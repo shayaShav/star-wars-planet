@@ -1,0 +1,4 @@
+<div ng-class="['category-content', {'selected-item': $ctrl.categoriesService.selected_category_item}]" layout="row" layout-align="space-between none">
+    <category-items-list category-items="$ctrl.categoriesService.categories_data[$ctrl.categoriesService.selected_category_name]" flex="40" layout-align="start center"></category-items-list>
+    <category-selected-item selected-item="$ctrl.categoriesService.selected_category_item" layout="column" layout-align="end center"></category-selected-item>
+</div>

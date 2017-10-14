@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StarWarsPlanet</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="icon" type="image/png" href="/media/icons/favicon.ico">
+
+        <base href="/">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+        <!-- build:css assets/vendor.min.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css assets/app.min.css -->
+        <link rel="stylesheet" href="/static/swp/swp.style.css" />
+        <link rel="stylesheet" href="/static/swp/shared/loading-animation/loading-animation.style.css"></script>
+        <link rel="stylesheet" href="/static/swp/app-main/app-main.style.css" />
+        <link rel="stylesheet" href="/static/swp/app-main/navigation-bar/navigation-bar.style.css" />
+        <link rel="stylesheet" href="/static/swp/app-main/category/category.style.css"></script>
+        <link rel="stylesheet" href="/static/swp/app-main/category/category-items-list/category-items-list.style.css"></script>
+        <link rel="stylesheet" href="/static/swp/app-main/category/category-selected-item/category-selected-item.style.css"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+
+        <div ui-view id="swp-view" layout="column" layout-align="center center">
+            <loading-animation></loading-animation>
+            Loading the force...
+        </div>
+
+        <!-- build:js assets/vendor.min.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="../bower_components/angular-messages/angular-messages.js"></script>
+        <script src="../bower_components/angular-material/angular-material.min.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <script src="/app-config.js"></script>
+
+        <!-- build:js assets/app.min.js -->
+        <script src="/static/swp/swp.module.js"></script>
+        <script src="/static/swp/swp.component.js"></script>
+        <script src="/static/swp/swp.service.app-config.js"></script>
+        <script src="/static/swp/swp.service.categories.js"></script>
+        <script src="/static/swp/swp.templates-cache.js"></script>
+
+        <script src="/static/swp/swp.config.http.js"></script>
+        <script src="/static/swp/swp.config.routing.js"></script>
+
+        <script src="/static/swp/shared/loading-animation/loading-animation.module.js"></script>
+        <script src="/static/swp/shared/loading-animation/loading-animation.component.js"></script>
+
+        <script src="/static/swp/app-main/app-main.module.js"></script>
+        <script src="/static/swp/app-main/app-main.component.js"></script>
+
+        <script src="/static/swp/app-main/navigation-bar/navigation-bar.module.js"></script>
+        <script src="/static/swp/app-main/navigation-bar/navigation-bar.component.js"></script>
+
+        <script src="/static/swp/app-main/category/category.module.js"></script>
+        <script src="/static/swp/app-main/category/category.component.js"></script>
+
+        <script src="/static/swp/app-main/category/category-items-list/category-items-list.module.js"></script>
+        <script src="/static/swp/app-main/category/category-items-list/category-items-list.component.js"></script>
+
+        <script src="/static/swp/app-main/category/category-selected-item/category-selected-item.module.js"></script>
+        <script src="/static/swp/app-main/category/category-selected-item/category-selected-item.component.js"></script>
+
+        <script src="/static/swp/swp.bootstrap.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

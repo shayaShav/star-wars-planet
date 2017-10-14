@@ -1,0 +1,8 @@
+<md-list class="category-items-lists" ng-if="!$ctrl.categoriesService.selected_category_is_loading">
+    <md-list-item ng-repeat="item in $ctrl.categoryItems" ng-click="$ctrl.categoriesService.select_category_item(item)">
+        <img alt="{{ item.name }}" ng-src="/media/images/{{$ctrl.categoriesService.selected_category_name}}.png" class="md-avatar" />
+        <p class="item-name">{{ item.name || item.title }}</p>
+        <md-icon ng-click="$event.stopPropagation(); $ctrl.categoriesService.toggle_category_item_bookmark(item)" aria-label="Add to favorites">{{item.bookmarked ? 'favorite' : 'favorite_outline'}}</md-icon>
+    </md-list-item>
+</md-list>
+<loading-animation ng-if="$ctrl.categoriesService.selected_category_is_loading" layout="column" layout-align="center center" layout-fill></loading-animation>

@@ -1,0 +1,46 @@
+{
+  "cwd": "./",
+  "name": "swp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Shaya"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-material": "latest",
+    "angular-animate": "latest",
+    "angular-aria": "latest",
+    "angular-ui-router": "^1.0.8"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "angular-material": {
+      "main": [
+        "angular-material.min.js",
+        "angular-material.min.css"
+      ]
+    },
+    "angular-ui-router": {
+      "main": "./release/angular-ui-router.min.js"
+    },
+    "angular-animate": {
+      "main": "angular-animate.min.js"
+    },
+    "angular-aria": {
+      "main": "angular-aria.min.js"
+    }
+  }
+}

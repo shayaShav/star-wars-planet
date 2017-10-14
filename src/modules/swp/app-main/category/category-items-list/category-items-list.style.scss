@@ -1,0 +1,30 @@
+category-items-list {
+    overflow-y: auto;
+    padding: 0;
+    background: #FFF;
+    opacity: 0.9;
+
+    md-list {
+        padding: 0;
+
+        md-list-item {
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+
+            &.md-no-proxy {
+                padding: 0;
+            }
+
+            .item-name {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            md-icon {
+                z-index: 1;
+                margin-right: 0;
+            }
+        }
+    }
+}
